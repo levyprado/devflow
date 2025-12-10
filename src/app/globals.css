@@ -1,1 +1,64 @@
 @import 'tailwindcss';
+
+:root {
+  --primary: #ff7000;
+  --primary-foreground: #ffffff;
+
+  --accent: #1da1f2;
+
+  --background: #fdfdfd;
+  --card: #ffffff;
+
+  --input: #f4f6f8;
+  --secondary: #fff1e6;
+
+  --foreground: #000000;
+  --nav-foreground: #151821;
+  --card-foreground: #0f1117;
+  --muted: #3f4354;
+  --muted-foreground: #858ead;
+
+  --utility-text: #212734;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    --card: #101218;
+
+    --input: #151821;
+    --secondary: #212734;
+
+    --foreground: #ffffff;
+    --nav-foreground: #f4f6f8;
+    --card-foreground: #fdfdfd;
+    --muted: #dce3f1;
+    --muted-foreground: #7b8ec8;
+
+    --utility-text: #dce3f1;
+  }
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-input: var(--input);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-nav-foreground: var(--nav-foreground);
+  --color-utility-text: var(--utility-text);
+
+  --font-sans: var(--font-inter);
+}
+
+@layer base {
+  body {
+    @apply bg-background font-sans text-foreground;
+  }
+}
