@@ -1,9 +1,9 @@
-import Navbar from '@/components/navigation/navbar'
+import Header from '@/components/header'
 
 export default function HomePage() {
   return (
     <>
-      <Navbar />
+      <Header />
       <div>HomePage</div>
     </>
   )
