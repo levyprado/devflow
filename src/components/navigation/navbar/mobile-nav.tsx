@@ -5,6 +5,7 @@ import { Dialog } from '@base-ui-components/react/dialog'
 import { Cancel01Icon, Menu01Icon } from '@hugeicons/core-free-icons'
 import { HugeiconsIcon } from '@hugeicons/react'
 import { useState } from 'react'
+import NavLinks from './nav-links'
 
 export default function MobileNav() {
   const [open, setOpen] = useState(false)
@@ -32,9 +33,16 @@ export default function MobileNav() {
         />
       </Dialog.Trigger>
       <Dialog.Portal>
-        <Dialog.Backdrop className='fixed inset-0 min-h-dvh bg-black opacity-20 transition-opacity duration-300 ease-out data-ending-style:opacity-0 data-starting-style:opacity-0 supports-[-webkit-touch-callout:none]:absolute dark:opacity-70' />
+        <Dialog.Backdrop className='fixed inset-0 bg-black opacity-20 transition-opacity duration-300 ease-out data-ending-style:opacity-0 data-starting-style:opacity-0 supports-[-webkit-touch-callout:none]:absolute dark:opacity-70' />
         <Dialog.Viewport>
-          <Dialog.Popup className='fixed top-14 left-0 min-h-dvh w-[80%] max-w-2xs bg-card transition-all duration-300 ease-out data-ending-style:-translate-x-full data-starting-style:-translate-x-full'>
+          <Dialog.Popup className='fixed top-14 left-0 flex min-h-[calc(100dvh-3.5rem)] w-[80%] max-w-2xs flex-col bg-card transition-all duration-300 ease-out data-ending-style:-translate-x-full data-starting-style:-translate-x-full'>
+            <nav className='flex flex-1 flex-col items-start justify-between px-5 pt-12 pb-10'>
+              <NavLinks />
+
+              <div className='flex flex-col'>
+                {/* Authentication buttons */}
+              </div>
+            </nav>
             <Dialog.Title />
             <Dialog.Description />
             <Dialog.Close />
