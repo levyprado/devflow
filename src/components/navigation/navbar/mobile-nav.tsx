@@ -12,7 +12,7 @@ export default function MobileNav() {
 
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
-      <Dialog.Trigger className='relative flex size-6 items-center justify-center'>
+      <Dialog.Trigger className='relative flex size-6 items-center justify-center sm:hidden'>
         <HugeiconsIcon
           icon={Menu01Icon}
           size={24}
@@ -31,8 +31,9 @@ export default function MobileNav() {
             open ? 'scale-100 opacity-100' : 'scale-0 opacity-0',
           )}
         />
+        <span className='absolute top-1/2 left-1/2 size-12 -translate-1/2 pointer-fine:hidden' />
       </Dialog.Trigger>
-      <Dialog.Portal>
+      <Dialog.Portal className='sm:hidden'>
         <Dialog.Backdrop className='fixed inset-0 bg-black opacity-20 transition-opacity duration-300 ease-out data-ending-style:opacity-0 data-starting-style:opacity-0 supports-[-webkit-touch-callout:none]:absolute dark:opacity-70' />
         <Dialog.Viewport>
           <Dialog.Popup className='fixed top-(--mobile-header-height) left-0 flex min-h-[calc(100dvh-var(--mobile-header-height))] w-[80%] max-w-2xs flex-col bg-card transition-all duration-300 ease-out data-ending-style:-translate-x-full data-starting-style:-translate-x-full'>
