@@ -44,9 +44,6 @@ export default function MobileNav() {
                 {/* Authentication buttons */}
               </div>
             </nav>
-            <Dialog.Title />
-            <Dialog.Description />
-            <Dialog.Close />
           </Dialog.Popup>
         </Dialog.Viewport>
       </Dialog.Portal>

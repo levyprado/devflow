@@ -20,7 +20,7 @@ export default function NavLinks({
         const linkContent = (
           <>
             <HugeiconsIcon icon={item.icon} size={24} strokeWidth={2} />
-            {item.label}
+            <span className='sm:hidden lg:inline-block'>{item.label}</span>
           </>
         )
 
