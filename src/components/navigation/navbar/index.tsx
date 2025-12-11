@@ -4,7 +4,7 @@ import MobileNav from './mobile-nav'
 
 export default function Navbar() {
   return (
-    <header className='sticky top-0 left-0 z-10 flex h-14 w-full items-center justify-between bg-card px-5'>
+    <header className='sticky top-0 left-0 z-10 flex h-(--header-height) w-full items-center justify-between bg-card px-5'>
       <Link
         href='/'
         className='inline-flex items-center gap-1 font-logo text-lg font-bold'
