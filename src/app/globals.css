@@ -19,6 +19,8 @@
   --muted-foreground: #858ead;
 
   --utility-text: #212734;
+
+  --header-height: 60px;
 }
 
 @media (prefers-color-scheme: dark) {
