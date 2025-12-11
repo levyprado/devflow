@@ -55,6 +55,7 @@
   --color-utility-text: var(--utility-text);
 
   --font-sans: var(--font-inter);
+  --font-logo: var(--font-space-grotesk);
 }
 
 @layer base {
