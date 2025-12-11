@@ -20,7 +20,8 @@
 
   --utility-text: #212734;
 
-  --header-height: 60px;
+  --mobile-header-height: 60px;
+  --desktop-header-height: 100px;
 }
 
 @media (prefers-color-scheme: dark) {
