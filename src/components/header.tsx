@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import MobileNav from './mobile-nav'
+import MobileNav from './navigation/navbar/mobile-nav'
 
-export default function Navbar() {
+export default function Header() {
   return (
-    <header className='sticky top-0 left-0 z-10 flex h-(--header-height) w-full items-center justify-between bg-card px-5'>
+    <header className='sticky top-0 left-0 z-10 flex h-(--mobile-header-height) w-full items-center justify-between bg-card px-5 lg:h-(--desktop-header-height)'>
       <Link
         href='/'
         className='inline-flex items-center gap-1 font-logo text-lg font-bold'
