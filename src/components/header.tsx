@@ -1,5 +1,5 @@
 import Logo from './logo'
-import MobileNav from './navigation/navbar/mobile-nav'
+import MobileNav from './navigation/mobile-nav'
 
 export default function Header() {
   return (
