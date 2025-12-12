@@ -9,6 +9,7 @@
   --background: #fdfdfd;
   --card: #ffffff;
 
+  --border: oklch(0.922 0 0);
   --input: #f4f6f8;
   --secondary: #fff1e6;
 
@@ -29,6 +30,7 @@
     --background: #000000;
     --card: #101218;
 
+    --border: oklch(1 0 0 / 10%);
     --input: #151821;
     --secondary: #212734;
 
@@ -51,6 +53,7 @@
   --color-foreground: var(--foreground);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
   --color-input: var(--input);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
@@ -62,6 +65,10 @@
 }
 
 @layer base {
+  * {
+    @apply border-border;
+  }
+
   body {
     @apply bg-background font-sans text-foreground;
   }
