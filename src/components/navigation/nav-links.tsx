@@ -33,7 +33,7 @@ export default function NavLinks({
                 <Link
                   href={item.href}
                   className={cn(
-                    'flex items-center gap-4 rounded-xl p-4 text-lg font-medium',
+                    'flex items-center gap-4 rounded-xl p-4 font-medium lg:text-lg',
                     pathname === item.href
                       ? 'bg-primary text-white'
                       : 'bg-transparent',

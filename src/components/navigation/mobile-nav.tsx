@@ -40,7 +40,7 @@ export default function MobileNav() {
         <Dialog.Viewport>
           <Dialog.Popup
             render={<nav />}
-            className='fixed top-(--mobile-header-height) left-0 flex h-[calc(100dvh-var(--mobile-header-height))] w-[80%] max-w-2xs flex-col gap-6 bg-card px-5 pt-12 pb-10 transition-all duration-300 ease-out data-ending-style:-translate-x-full data-starting-style:-translate-x-full'
+            className='fixed top-(--mobile-header-height) left-0 flex h-[calc(100dvh-var(--mobile-header-height))] w-[80%] max-w-2xs flex-col gap-6 bg-card px-5 py-10 transition-all duration-300 ease-out data-ending-style:-translate-x-full data-starting-style:-translate-x-full'
           >
             <div className='flex-1 overflow-y-auto overscroll-contain'>
               <NavLinks isMobileNav={true} />
