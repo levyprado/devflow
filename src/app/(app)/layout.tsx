@@ -11,7 +11,7 @@ export default function AppLayout({
       <div className='flex'>
         <Navbar />
 
-        {children}
+        <main className='flex flex-col px-5'>{children}</main>
       </div>
     </>
   )
