@@ -34,7 +34,9 @@ export default function NavLinks({
                   href={item.href}
                   className={cn(
                     'flex items-center gap-4 rounded-xl p-4 text-lg font-medium',
-                    pathname === item.href ? 'bg-primary' : 'bg-transparent',
+                    pathname === item.href
+                      ? 'bg-primary text-white'
+                      : 'bg-transparent',
                   )}
                 >
                   {linkContent}
@@ -49,7 +51,9 @@ export default function NavLinks({
               href={item.href}
               className={cn(
                 'flex items-center gap-4 rounded-xl p-4 text-lg font-medium',
-                pathname === item.href ? 'bg-primary' : 'bg-transparent',
+                pathname === item.href
+                  ? 'bg-primary text-white'
+                  : 'bg-transparent',
               )}
             >
               {linkContent}
