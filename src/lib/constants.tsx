@@ -52,3 +52,9 @@ export const navbarLinks: NavItem[] = [
     href: '/ask-question',
   },
 ]
+
+export const ROUTES = {
+  HOME: '/',
+  SIGN_IN: '/sign-in',
+  SIGN_UP: '/sign-up',
+}
