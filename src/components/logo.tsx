@@ -1,10 +1,11 @@
+import { ROUTES } from '@/lib/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Logo() {
   return (
     <Link
-      href='/'
+      href={ROUTES.HOME}
       className='inline-flex items-center gap-1 font-logo text-lg font-bold sm:gap-2 sm:text-2xl lg:gap-3 lg:text-3xl'
     >
       <Image

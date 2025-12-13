@@ -1,5 +1,6 @@
 'use client'
 
+import { ROUTES } from '@/lib/constants'
 import { cn } from '@/lib/utils'
 import { Dialog } from '@base-ui-components/react/dialog'
 import { Cancel01Icon, Menu01Icon } from '@hugeicons/core-free-icons'
@@ -48,14 +49,14 @@ export default function MobileNav() {
 
             <div className='flex flex-col gap-3'>
               <Button
-                render={<Link href='/login' />}
+                render={<Link href={ROUTES.SIGN_IN} />}
                 nativeButton={false}
                 variant='outline'
               >
-                Log in
+                Sign in
               </Button>
               <Button
-                render={<Link href='/signup' />}
+                render={<Link href={ROUTES.SIGN_UP} />}
                 nativeButton={false}
                 variant='outline'
               >

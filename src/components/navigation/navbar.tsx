@@ -1,3 +1,4 @@
+import { ROUTES } from '@/lib/constants'
 import { Login01Icon, UserAdd01Icon } from '@hugeicons/core-free-icons'
 import { HugeiconsIcon } from '@hugeicons/react'
 import Link from 'next/link'
@@ -13,7 +14,7 @@ export default function Navbar() {
 
       <div className='flex flex-col gap-3'>
         <Button
-          render={<Link href='/' />}
+          render={<Link href={ROUTES.SIGN_IN} />}
           nativeButton={false}
           variant='outline'
           className='p-4 lg:py-3'
@@ -24,10 +25,10 @@ export default function Navbar() {
             strokeWidth={2}
             className='lg:hidden'
           />
-          <span className='hidden lg:inline-block'>Log in</span>
+          <span className='hidden lg:inline-block'>Sign in</span>
         </Button>
         <Button
-          render={<Link href='/' />}
+          render={<Link href={ROUTES.SIGN_UP} />}
           nativeButton={false}
           variant='outline'
           className='p-4 lg:py-3'
