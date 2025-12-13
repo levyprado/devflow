@@ -7,7 +7,7 @@ const baseClasses =
 
 const variants = {
   default: 'bg-primary text-primary-foreground hover:bg-primary-lighter',
-  outline: 'border-border hover:bg-background',
+  outline: 'border-border hover:bg-foreground/4',
 }
 
 type ButtonProps = BaseButtonProps & {
