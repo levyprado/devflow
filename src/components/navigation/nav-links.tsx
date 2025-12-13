@@ -26,8 +26,8 @@ function NavItem({
   const className = cn(
     'flex items-center gap-4 rounded-xl p-4 font-medium transition-colors duration-100 lg:text-lg',
     isActive
-      ? 'bg-primary text-primary-foreground'
-      : 'bg-transparent hover:bg-muted',
+      ? 'bg-primary text-primary-foreground hover:bg-primary-lighter'
+      : 'bg-transparent hover:bg-foreground/4',
   )
   const link = (
     <Link href={item.href} className={className}>
