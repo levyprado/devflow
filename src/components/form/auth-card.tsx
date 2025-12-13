@@ -1,3 +1,4 @@
+import { ROUTES } from '@/lib/constants'
 import { Github01Icon, GoogleIcon } from '@hugeicons/core-free-icons'
 import { HugeiconsIcon } from '@hugeicons/react'
 import Link from 'next/link'
@@ -10,7 +11,7 @@ type AuthCardProps = {
 
 export default function AuthCard({ type, title, children }: AuthCardProps) {
   return (
-    <div className='flex w-full max-w-md flex-col gap-6 rounded-xl border bg-card p-8 shadow-[0_8px_48px] shadow-foreground/12'>
+    <div className='flex w-full max-w-md flex-col gap-6 rounded-xl border bg-card p-8 shadow-[0_8px_48px] shadow-foreground/6'>
       <div className='flex flex-col gap-1'>
         <h1 className='text-xl font-semibold'>{title}</h1>
         <h2 className='text-muted-foreground'>
@@ -43,7 +44,7 @@ export default function AuthCard({ type, title, children }: AuthCardProps) {
           {type === 'sign-up' ? 'Have an account?' : 'No account?'}
         </span>{' '}
         <Link
-          href={type === 'sign-up' ? '/login' : '/sign-up'}
+          href={type === 'sign-up' ? ROUTES.SIGN_IN : ROUTES.SIGN_UP}
           className='font-medium text-primary hover:underline'
         >
           {type === 'sign-up' ? 'Sign in' : 'Sign up'}
