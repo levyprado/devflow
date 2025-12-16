@@ -16,10 +16,13 @@ export default function AuthCard({ type, title, children }: AuthCardProps) {
           <h1 className='text-2xl font-semibold'>{title}</h1>
           <h2 className='text-muted-foreground'>
             to continue to{' '}
-            <span className='font-bold'>
+            <Link
+              href={ROUTES.HOME}
+              className='font-bold decoration-2 underline-offset-2 hover:text-primary hover:underline'
+            >
               <span className='text-foreground'>Dev</span>
               <span className='text-primary'>Flow</span>
-            </span>
+            </Link>
           </h2>
         </div>
 
