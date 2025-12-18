@@ -31,18 +31,18 @@ const topQuestions = [
 const popularTags = [
   {
     _id: '1',
-    name: 'JavaScript',
-    questions: 100,
-  },
-  {
-    _id: '2',
     name: 'TypeScript',
     questions: 200,
   },
   {
-    _id: '3',
+    _id: '2',
     name: 'React',
     questions: 150,
+  },
+  {
+    _id: '3',
+    name: 'JavaScript',
+    questions: 100,
   },
   {
     _id: '4',
@@ -68,12 +68,12 @@ export default function RightSidebar() {
               href={ROUTES.QUESTION(_id)}
               className='group flex items-center justify-between gap-6'
             >
-              {title}
+              <span className='line-clamp-3'>{title}</span>
               <HugeiconsIcon
                 icon={ArrowRight01Icon}
-                size={24}
+                size={20}
                 strokeWidth={2}
-                className='transition-transform group-hover:-rotate-45'
+                className='shrink-0 transition-transform group-hover:-rotate-45'
               />
             </Link>
           ))}
