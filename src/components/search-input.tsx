@@ -1,15 +1,24 @@
+import { cn } from '@/lib/utils'
 import { Search01Icon } from '@hugeicons/core-free-icons'
 import { HugeiconsIcon } from '@hugeicons/react'
 import Input from './ui/input'
 
-export default function SearchInput() {
+type SearchInputProps = {
+  placeholder: string
+  className?: string
+}
+
+export default function SearchInput({
+  placeholder,
+  className,
+}: SearchInputProps) {
   return (
     <>
-      <div className='relative mx-auto w-full max-w-[600px]'>
+      <div className={cn('relative w-full', className)}>
         <Input
           id='search'
           type='text'
-          placeholder='Search anything globally'
+          placeholder={placeholder}
           className='peer ps-11'
         />
         <div className='pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 text-muted-foreground/80 peer-disabled:opacity-50'>
