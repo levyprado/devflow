@@ -9,7 +9,7 @@ export default function Input({
     <input
       type={type}
       className={cn(
-        'inline-flex w-full rounded-xl border bg-input px-4 py-2 text-base shadow-xs ring-border transition-shadow outline-none focus-visible:ring-2',
+        'inline-flex w-full rounded-xl border bg-input px-4 py-2 text-base shadow-xs ring-border transition-shadow outline-none focus-visible:ring-2 lg:py-3',
         className,
       )}
       {...props}

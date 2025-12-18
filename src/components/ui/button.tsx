@@ -3,7 +3,7 @@ import type { ButtonProps as BaseButtonProps } from '@base-ui-components/react/b
 import { Button as BaseButton } from '@base-ui-components/react/button'
 
 const baseClasses =
-  'inline-flex items-center justify-center border border-transparent gap-2 py-3 px-4 rounded-xl font-medium cursor-pointer transition-colors duration-100'
+  'inline-flex items-center justify-center border border-transparent gap-2 py-3 px-6 rounded-xl font-medium cursor-pointer transition-colors duration-100'
 
 const variants = {
   default: 'bg-primary text-primary-foreground hover:bg-primary-lighter',
