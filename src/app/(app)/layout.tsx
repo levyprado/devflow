@@ -11,7 +11,7 @@ export default function AppLayout({
 
       <div className='flex'>
         <Navbar />
-        <main className='flex flex-1 flex-col px-5 pt-8 sm:px-14 sm:pt-16'>
+        <main className='mx-auto flex max-w-6xl flex-1 flex-col px-5 pt-8 sm:px-14 sm:pt-16'>
           {children}
         </main>
         <RightSidebar />

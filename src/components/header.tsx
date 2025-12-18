@@ -9,7 +9,10 @@ export default function Header() {
         <Logo />
 
         <div className='hidden sm:block sm:w-full'>
-          <SearchInput />
+          <SearchInput
+            placeholder='Search anything globally...'
+            className='mx-auto max-w-[600px]'
+          />
         </div>
 
         <div className='flex items-center'>
@@ -20,7 +23,7 @@ export default function Header() {
       </header>
 
       <div className='flex w-full flex-col bg-card px-5 pt-0.5 pb-5 shadow-sm sm:hidden'>
-        <SearchInput />
+        <SearchInput placeholder='Search anything globally...' />
       </div>
     </>
   )
