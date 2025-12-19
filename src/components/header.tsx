@@ -10,6 +10,7 @@ export default function Header() {
 
         <div className='hidden sm:block sm:w-full'>
           <SearchInput
+            queryKey='global'
             placeholder='Search anything globally...'
             className='mx-auto max-w-[600px]'
           />
@@ -23,7 +24,10 @@ export default function Header() {
       </header>
 
       <div className='flex w-full flex-col bg-card px-5 pt-0.5 pb-5 shadow-sm sm:hidden'>
-        <SearchInput placeholder='Search anything globally...' />
+        <SearchInput
+          queryKey='global'
+          placeholder='Search anything globally...'
+        />
       </div>
     </>
   )
